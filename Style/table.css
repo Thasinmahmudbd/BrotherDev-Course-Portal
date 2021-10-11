@@ -1,0 +1,36 @@
+table{
+    display: table;
+    border:2px solid #eeefff;
+}
+
+tr{
+    margin:3px;
+}
+
+tr:nth-child(odd){
+    background-color: #eeefff;
+}
+
+tr:nth-child(1){
+    background-color: #eeefff;
+}
+
+th{
+    padding: .2rem;
+    font-size: .8rem;
+}
+
+td{
+    padding: .5rem;
+    font-size: .8rem;
+    border:2px solid #eeefff;
+}
+
+td:nth-child(1){
+    text-align: center;
+}
+
+ol{
+    list-style-position: inside;
+    line-height: 1.8;
+}

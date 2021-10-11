@@ -1,0 +1,138 @@
+.portal{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap:.5rem;
+}
+
+/* left side panel */
+
+.contentPanel{
+    width:150px;
+    display:grid;
+    position:fixed;
+    z-index: 5;
+}
+
+.panelItem{
+    text-align: right;
+    padding:1rem 1rem 1rem 1rem;
+    margin-bottom: .5rem;
+    background-color: #fff;
+    border:none;
+    cursor:pointer;
+    border-right: 5px solid #FF165D;
+    font-weight: 700;
+    font-size: .8rem;
+    text-decoration: none;
+    color:#000;
+    transition:200ms ease-in-out;
+}
+
+.panelItem:hover{
+    background-color: #FF165D;
+    color:#fff;
+    transition:200ms ease-in-out;
+}
+
+/* right side portal content */
+
+/* my course, course plan */
+
+.contents{
+    background-color: #fff;
+    margin-right:2rem;
+    height: 100%;
+    padding:1rem;
+}
+
+.myCourses{
+    display:grid;
+    grid-gap:1rem;
+    padding:1rem;
+}
+
+.info{
+    display:grid;
+    grid-gap:1rem;
+    margin-bottom:1rem;
+}
+
+.text{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.sectionTitle{
+    font-size: .9rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.myCourseList{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:1rem;
+    padding-bottom: .5rem;
+    border-bottom:2px solid #FF165D;
+}
+
+.courseThumb{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:.5rem;
+    align-self: flex-end;
+    justify-self: center;
+    padding:.5rem;
+    text-decoration:none;
+    background-color: transparent;
+    border:none;
+    text-align: left;
+    cursor:pointer;
+}
+
+.thumbTitle{
+    font-size: .8rem;
+    font-weight: 700;
+    color:#000;
+    text-decoration:none;
+}
+
+.advert{
+    display:grid;
+    grid-gap:1rem;
+    padding:1rem;
+}
+
+.advertThumb{
+    display:grid;
+    grid-template-columns: 180px 1fr 100px;
+    grid-gap:.2rem;
+}
+
+.advertBtn{
+    display:grid;
+    grid-template-columns: 1fr;
+    align-self: flex-start;
+    padding:.5rem;
+    border-left:2px solid #FF165D;
+}
+
+/* resource */
+
+.resourceThumb{
+    display:grid;
+    grid-template-columns: 100px 1fr;
+    text-decoration: none;
+    color:#000;
+}
+
+.resourceLogo{
+    align-self: center;
+    justify-self: center;
+    color:#FFF;
+    font-size:1.5rem;
+    padding:.5rem .7rem;
+    background-color: #FF165D;
+    border-radius: 100px;
+}
+

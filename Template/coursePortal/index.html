@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Global-->
+    <link rel="stylesheet" href="../../Style/global.css">
+
+    <!--Form-->
+    <link rel="stylesheet" href="../../Style/form.css">
+
+    <!--Keyframes-->
+    <link rel="stylesheet" href="../../Style/keyframes.css">
+
+    <!--Basic-->
+    <link rel="stylesheet" href="../../Style/coursePortal/index.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+
+    <!--radio toggle-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/aafecdc4bf.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="allLeft">
+
+        <!--left side scrollable-->
+
+        <div class="left">
+
+            <!--nav fixed-->
+
+            <div class="nav">
+                <p><span class="bd">BD</span> <span class="courses">Courses</span></p>
+
+                <div class="links" id="courseBtns">
+                    <button class="linkBtn" id="allBtn" onclick="allBtnClicked()">All</button>
+                    <button class="linkBtn" id="appBtn" onclick="appBtnClicked()">App</button>
+                    <button class="linkBtn" id="webBtn" onclick="webBtnClicked()">Web</button>
+                </div>
+            </div>
+
+            <div class="navHolder">placeholder</div>
+
+            <!--content scrollable-->
+
+            <div class="content" id="content">
+
+                <div class="welcome">
+                    <img class="welcomeGif" src="https://i.pinimg.com/originals/9e/a7/2e/9ea72ef078139ced289852e8a4ea0c5c.gif" alt="" width="100px">
+                    <p class="welcomeTxt">Welcome to Brothers Dev Courses. <br> Browse through our courses till you find something interesting.</p>
+                </div>
+
+                <div class="webCourses">
+
+                    <div class="course" id="web1">
+                        <img class="courseImage" src="../../Media/course/HtmlCss.png" alt="" width="200px">
+                        <div class="courseTxt">
+                            <h1 class="courseHeader">Basic HTML & CSS</h1>
+                        </div>
+                        <a class="details" href=""><i class="fas fa-exclamation i"></i></a>
+                    </div>
+
+                    <div class="course" id="web2">
+                        <img class="courseImage" src="../../Media/course/phpfull.jpg" alt="" width="200px">
+                        <div class="courseTxt">
+                            <h1 class="courseHeader">PHP</h1>
+                        </div>
+                        <a class="details" href=""><i class="fas fa-exclamation i"></i></a>
+                    </div>
+
+                    <div class="course" id="web3">
+                        <img class="courseImage" src="../../Media/course/laravel.jpg" alt="" width="200px">
+                        <div class="courseTxt">
+                            <h1 class="courseHeader">Laravel 8</h1>
+                        </div>
+                        <a class="details" href=""><i class="fas fa-exclamation i"></i></a>
+                    </div>
+
+                    <div class="course" id="app">
+                        <img class="courseImage" src="../../Media/course/Flutter.webp" alt="" width="200px">
+                        <div class="courseTxt">
+                            <h1 class="courseHeader">Flutter</h1>
+                        </div>
+                        <a class="details" href=""><i class="fas fa-exclamation i"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="goodbye">
+                    <p class="goodbyeTxt"><a class="blueLink" href="myCourses.html">Click Here</a> to learn why these courses are important and why they are necessary for you to learn them. <br> If you don't understand anything, please</p>
+                    <img class="goodbyeGif" src="https://icon-library.com/images/cat-icon-gif/cat-icon-gif-18.jpg" alt="" width="120px">
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--signup form scrollable-->
+
+            <form action="" class="form" id="signUp">
+
+                <p class="formText">Personal Information</p>
+
+                <div class="formsec threein1">
+                    <label for="firstName" class="label">First Name</label>
+                    <label for="middleName" class="label">Middle Name</label>
+                    <label for="lastName" class="label">Last Name</label>
+                    <input type="text" class="input" name="middleName" placeholder="Required" required>
+                    <input type="text" class="input" name="firstName" placeholder="Optional">
+                    <input type="text" class="input" name="lastName" placeholder="Required" required>
+                </div>
+
+                <div class="formsec">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" class="input" name="email" placeholder="Required" required>
+                </div>
+
+                <div class="formsec twoin1">
+                    <label for="mobile" class="label">Mobile</label>
+                    <span></span>
+                    <input type="tel" class="input" name="email" placeholder="Required" required>
+                    <input type="tel" class="input" name="email" placeholder="Optional">
+                </div>
+
+                <span></span>
+
+                <p class="formText">Course Information</p>
+
+                <p class="formsec label">I'm interested in</p>
+
+                <div class="formsec twoin1 checkbox">
+
+                    <input type="checkbox" id="htmlCss" name="htmlCss" value="Basic Web-Design (HTML, CSS)">
+                    <label class="label" for="htmlCss"> Basic Web-Design. (HTML, CSS) --- 4000BDT</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Web-Development. (PHP)">
+                    <label class="label" for="vehicle2"> Web-Development. (PHP) --- 5500BDT</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="PHP Framework. (Laravel)">
+                    <label class="label" for="vehicle3"> PHP Framework. (Laravel) --- 6500BDT</label>
+
+                </div>
+
+                <span></span>
+
+                <p class="formText">Security</p>
+
+                <div class="formsec twoin1">
+                    <label for="password" class="label">Password</label>
+                    <label for="confirmPassword" class="label">Confirm Password</label>
+                    <input type="password" class="input" name="password" placeholder="Must be above 8 charecters" required>
+                    <input type="password" class="input" name="confirmPassword" required>
+                </div>
+
+                <span></span>
+
+                <p class="formText">Quota</p>
+
+                <p class="formsec label">Select a Quota to get discounts.</p>
+                <div class="formsec checkbox">
+
+                    <input type="radio" id="non" name="quota" value="None">
+                    <label class="label" for="non">None</label>
+
+                    <input type="radio" id="BQ" name="quota" value="Baiust">
+                    <label class="label" for="BQ">Baiust Student Quota</label>
+
+                    <input type="radio" id="Ref" name="quota" value="Referred">
+                    <label class="label" for="Ref">Referred</label>
+
+                </div>
+
+                <p id="none" class="formsec label none info">Web courses: <br> Register for all courses and get 1000TK discount.</p>
+
+                <div class="formsec baiust" id="baiust">
+
+                    <p class="label info">Web courses: <br> Register for any single course and get 300TK discount. <br> Register for all courses and get 1500TK discount.</p><br>
+
+                    <label for="id" class="label">Insert your ID</label>
+                    <input type="tel" class="input" name="id" value="0" required>
+
+                </div>
+
+                <div class="formsec refer" id="refer">
+
+                    <p class="label info">Web courses: <br> Register for any single course and get 300TK discount. <br> Register for all courses and get 900TK + 1000Tk discount.</p><br>
+
+                    <label for="refer" class="label">Insert referal code</label>
+                    <input type="text" class="input" name="refer" value="None" required>
+
+                </div>
+
+                <span></span>
+
+                <p class="formText">Payment Information</p>
+
+                <div class="formsec twoin1">
+
+                    <p class="label info">Use 017xxxxxxxx for payment.</p>
+                    
+                    <label for="confirmPassword" class="label">Transaction ID</label>
+
+                    <div class="transactionLogo">
+                        <img src="../../Media/logo/BKASH_LOGO.png" width="60px" alt="Bkash">
+                        <img src="../../Media/logo/NAGAD_LOGO.png" width="60px" alt="Nagad">
+                        <img src="../../Media/logo/ROCKET_LOGO.png" width="40px" alt="Rocket">
+                    </div>
+
+                    <input type="password" class="input" name="password"  required>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <!--placeholder-->
+        <span></span>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="allRight">
+
+        <!--right side fixed-->
+
+        <div class="right">
+
+            <!--portion one-->
+
+            <div class="portion1" id="portion1">
+
+                <p class="rHeading">Login to access classes.</p>
+
+                <form action="" class="form">
+                    <div class="formsec">
+                        <label class="label">Email</label>
+                        <input type="email" class="input">
+                    </div>
+                    <div class="formsec">
+                        <label class="label">Password</label>
+                        <input type="password" class="input">
+                    </div>
+                    <input type="submit" class="submitBtn" value="Log in">
+                </form>
+
+                <p class="rfooter">Don't have an account <button onclick="showPortion2()" class="link">Sign up</button> now.</p>
+
+            </div>
+
+            <!--portion two-->
+
+            <div class="portion2" id="portion2">
+
+                <p class="rHeading2">Fill up the form with accurate data. <br> A confirmation will be sent to you soon. <br><br> Welcome to the brotherhood.</p>
+
+                <p class="rfooter">Already have an account <button onclick="showPortion1()" class="link">Log in</button> now.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        $('input[type="radio"]').click(function () {
+            var inputValue = $(this).attr("value");
+            if (inputValue == "Baiust") {
+                $("#baiust").show();
+                $("#refer").hide();
+                $("#none").hide();
+            } else if (inputValue == "Referred") {
+                $("#baiust").hide();
+                $("#refer").show();
+                $("#none").hide();
+            } else if (inputValue == "None")  {
+                $("#baiust").hide();
+                $("#refer").hide();
+                $("#none").show();
+            }
+        });
+
+        function showPortion1() {
+            document.getElementById("portion1").style.display = 'block';
+            document.getElementById("portion2").style.display = 'none';
+
+            document.getElementById("signUp").style.display = 'none';
+            document.getElementById("content").style.display = 'grid';
+            document.getElementById("courseBtns").style.display = 'block';
+        }
+
+        function showPortion2() {
+            document.getElementById("portion2").style.display = 'block';
+            document.getElementById("portion1").style.display = 'none';
+
+            document.getElementById("signUp").style.display = 'grid';
+            document.getElementById("content").style.display = 'none';
+            document.getElementById("courseBtns").style.display = 'none';
+        }
+
+        function allBtnClicked() {
+            document.getElementById("allBtn").style.color = '#FF165D';
+            document.getElementById("webBtn").style.color = '#000';
+            document.getElementById("appBtn").style.color = '#000';
+
+            document.getElementById("web1").style.display = 'grid';
+            document.getElementById("web2").style.display = 'grid';
+            document.getElementById("web3").style.display = 'grid';
+            document.getElementById("app").style.display = 'grid';
+            
+        }
+
+        function webBtnClicked() {
+            document.getElementById("webBtn").style.color = '#FF165D';
+            document.getElementById("allBtn").style.color = '#000';
+            document.getElementById("appBtn").style.color = '#000';
+
+            document.getElementById("web1").style.display = 'grid';
+            document.getElementById("web2").style.display = 'grid';
+            document.getElementById("web3").style.display = 'grid';
+            document.getElementById("app").style.display = 'none';
+            
+        }
+
+        function appBtnClicked() {
+            document.getElementById("appBtn").style.color = '#FF165D';
+            document.getElementById("allBtn").style.color = '#000';
+            document.getElementById("webBtn").style.color = '#000';
+
+            document.getElementById("web1").style.display = 'none';
+            document.getElementById("web2").style.display = 'none';
+            document.getElementById("web3").style.display = 'none';
+            document.getElementById("app").style.display = 'grid';
+            
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+<!--<div class="gridCol_2_size_7_3 gridGap_2 w_75Per m_a">
+
+    <span></span>
+
+    preview start
+
+    <div class="posFix top_0 right_110 w_25Per h_100Per">
+
+        <h2 class="titleR mt_112px">         
+            Details
+        </h2>
+
+        <div class="ofScrollY h_100Per pr_10px pl_10px scrlNone" id="detailsList">
+
+            This slot holds, js generated details of previews for all colors
+
+        </div>
+
+    </div>
+
+    preview end
+
+</div>-->

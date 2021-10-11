@@ -1,0 +1,16 @@
+/* key frames */
+
+@keyframes popUpFromLeft {
+    from {transform: translateX(-1000px);}
+    to {transform: translateX(0px);}
+}
+
+@keyframes popUpFromRight {
+    from {transform: translateX(1000px);}
+    to {transform: translateX(0px);}
+}
+
+@keyframes popUpFromBottom {
+    from {transform: translateY(1000px);}
+    to {transform: translateY(0px);}
+}
