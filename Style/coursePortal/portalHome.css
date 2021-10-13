@@ -136,3 +136,264 @@
     border-radius: 100px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* right side */
+
+/* student info */
+
+.studentInfo{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    margin-top:20px;
+}
+
+.studentBasicInfo{
+    padding:1rem 0rem;
+    line-height: 1.5;
+}
+
+/* other info nav */
+
+.rightNav{
+    display:block;
+    margin:.5rem;
+    position: absolute;
+    margin-right: 20px;
+    right:0;
+    top:100px;
+    padding-left:255px;
+    padding-bottom:.5rem;
+    border-bottom:2px solid #FF165D;
+}
+
+.rightNavBtn{
+    background-color: transparent;
+    color:#000;
+    border: none;
+    padding-left: .2rem;
+    font-size: .8rem;
+    cursor:pointer;
+}
+
+.rightNavBtn:hover{
+    background-color: transparent;
+    color:#FF165D;
+    border: none;
+    padding-left: .2rem;
+    font-size: .8rem;
+    cursor:pointer;
+}
+
+.rightSections{
+    position:fixed;
+    top:130px;
+    width:500px;
+    padding: 1.5rem 0rem;
+    line-height: 1.5;
+}
+
+/* image uploader */
+
+.message_form{
+    border-radius: 20px; 
+}
+
+.placeholder_image{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    align-self: center;
+    border-radius: 100px;
+    border: 10px solid #fff;
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+
+.placeholder_image:hover{
+    width: calc(50% + 10px);
+    margin: auto;
+    border-radius: 100px;
+    border: 5px solid #fff;
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+
+.img_uploader{
+    display: none;
+}
+
+/* grade */
+
+.grade{
+    display:none;
+    width:450px;
+    margin:0rem 1rem;
+    transform: translateX(-1000);
+    -webkit-animation: popUpFromRight 1s forwards; /* for less modern browsers */
+    animation: popUpFromRight 1s forwards;
+}
+
+.gradeSymbol{
+    background-color:#3EC1D3;
+    color:#fff;
+    justify-self: center;
+    align-self: center;
+    padding:.3rem .4rem;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.gradeContent{
+    display:grid;
+    grid-template-columns: 35px 1fr;
+    text-align: right;
+}
+
+.gradeInfo{
+    padding:.5rem;
+}
+
+.points{
+    color:#FF165D;
+}
+
+.gradQuestions{
+    margin-top: 1rem;
+    display:grid;
+    grid-gap: 1rem;
+    text-align: justify;
+}
+
+.ans{
+    display:grid;
+    grid-template-columns: 40px 1fr;
+}
+
+/* grade */
+
+.payment{
+    display:none;
+    grid-gap:1rem;
+    transform: translateX(-1000);
+    -webkit-animation: popUpFromRight 1s forwards; /* for less modern browsers */
+    animation: popUpFromRight 1s forwards;
+}
+
+.paymentForm{
+    display:grid;
+    grid-template-columns: 70px 2fr 1fr;
+    grid-gap:.5rem;
+}
+
+.paymentForm .label{
+    padding: .2rem;
+}
+
+.paymentForm .input{
+    text-align: center;
+}
+
+/* notification */
+
+.notification{
+    display:grid;
+    grid-gap:.5rem;
+    transform: translateX(-1000);
+    -webkit-animation: popUpFromRight 1s forwards; /* for less modern browsers */
+    animation: popUpFromRight 1s forwards;
+}
+
+.noticeHeader{
+    background-color: #3EC1D3;
+    color:#FFF;
+    padding: .5rem 1rem;
+}
+
+.notice{
+    background-color: #F6F7D7;
+    padding: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#notifyBtn{
+    color:#FF165D;
+}
+
+/* messaging */
+
+.messaging{
+    display:none;
+    transform: translateX(-1000);
+    -webkit-animation: popUpFromRight 1s forwards; /* for less modern browsers */
+    animation: popUpFromRight 1s forwards;
+}
+
+
+/* security */
+
+.security{
+    display:none;
+    transform: translateX(-1000);
+    -webkit-animation: popUpFromRight 1s forwards; /* for less modern browsers */
+    animation: popUpFromRight 1s forwards;
+}
+
+
+/* under dev */
+
+.underdevelopment{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: coral;
+    height: 450px;
+}
+
+.fa-cog{
+    display:grid;
+    align-self: center;
+    justify-self: center;
+    color:#fff;
+}
+
+.bigCog{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: right;
+    font-size: 60px;
+    animation-name: spinClockWise 2s;
+    -webkit-animation: spinClockWise 2s forwards; /* for less modern browsers */
+    animation-iteration-count: infinite;
+}
+
+.smallCogUp{
+    justify-self: left;
+    align-self:flex-end;
+    font-size: 20px;
+    margin-left:10px;
+    animation-name: spinClockWise 2s;
+    -webkit-animation: spinClockWise 2s forwards; /* for less modern browsers */
+    animation-iteration-count: infinite;
+}
+
+.smallCogDown{
+    justify-self: left;
+    align-self:flex-start;
+    font-size: 40px;
+    animation-name: spinAntiClockWise 2s;
+    -webkit-animation: spinAntiClockWise 2s forwards; /* for less modern browsers */
+    animation-iteration-count: infinite;
+}

@@ -19,3 +19,49 @@
     border: 2px solid #3b3838;
     padding: .2rem;
 }
+
+.formBtn{
+    font-size: .8rem;
+    border: 2px solid #3EC1D3;
+    background-color: #3EC1D3;
+    padding: .2rem .5rem;
+    color:#fff;
+    cursor:pointer;
+    transition: 200ms ease-in-out;
+}
+
+.formBtn:hover{
+    border: 2px solid #37acbb;
+    background-color: #37acbb;
+    transition: 200ms ease-in-out;
+}
+
+.cancelBtn{
+    font-size: .8rem;
+    border: 2px solid #FF165D;
+    background-color: #FF165D;
+    padding: .2rem .5rem;
+    color:#fff;
+    cursor:pointer;
+    transition: 200ms ease-in-out;
+}
+
+.cancelBtn:hover{
+    border: 2px solid #e91655;
+    background-color: #e91655;
+    transition: 200ms ease-in-out;
+}
+
+.cancelBtnLight{
+    font-size: .8rem;
+    color:#FF165D;
+    cursor:pointer;
+    background-color: transparent;
+    border:none;
+    transition: 200ms ease-in-out;
+}
+
+.cancelBtnLight:hover{
+    color: #e91655;
+    transition: 200ms ease-in-out;
+}

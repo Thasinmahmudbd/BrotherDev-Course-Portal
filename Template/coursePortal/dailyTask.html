@@ -32,6 +32,11 @@
     <!--Global-->
     <link rel="stylesheet" href="../../Style/global.css">
 
+    <!-- script -->
+	<script src="../../Script/triggerClick.js"></script>
+    <script src="../../Script/imageViewer.js"></script>
+    <script src="../../Script/toggleOnClick.js"></script>
+
     <title>Document</title>
 
 </head>
@@ -215,17 +220,132 @@
 
             <!--portion one-->
 
-            <div class="portion1" id="portion1">
+            <div class="studentInfo">
 
-            
+                <form action="" method="post" class="message_form" enctype="multipart/form-data">
+
+                    <img src="../../Media/System/Profile_avatar_placeholder_large.png" alt="Upload Photo" class="placeholder_image" onclick="triggerClick()">
+                    <input class="input img_uploader" type="file" name="message_photo" onchange="displayImage(this)" id="place_holder">
+    
+                </form>
+
+                <div class="text studentBasicInfo">
+                    <p>Student Name.</p>
+                    <p>Student ID.</p>
+                    <p>Batch No.</p>
+                </div>
 
             </div>
 
             <!--portion two-->
 
-            <div class="portion2" id="portion2">
+            <div class="otherInfo">
 
-            
+                <div class="rightNav">
+                    <button class="rightNavBtn" id="gradeBtn" onclick="showGrade()"><i class="fas fa-graduation-cap"></i></button>
+                    <button class="rightNavBtn" id="paymentBtn" onclick="showPayment()"><i class="fas fa-dollar-sign"></i></button>
+                    <a href="#" class="rightNavBtn" id="messagingBtn" onclick="showMessaging()"><i class="fas fa-comments"></i></a>
+                    <button class="rightNavBtn" id="notifyBtn" onclick="showNotification()"><i class="fas fa-bell"></i></button>
+                    <a href="#" class="rightNavBtn" id="securityBtn" onclick="showSecurity()"><i class="fas fa-lock"></i></a>
+                </div>
+
+                <div class="grade rightSections" id="grade">
+                    <div class="gradeContent">
+                        <p class="gradeSymbol text">A+</p>
+                        <p class="text gradeInfo"> 
+                            Total points: 
+                            <span class="points">500/500.</span>
+                            <span class="gradeInfo">Very Good.</span>
+                        </p>
+                    </div>
+
+                    <div class="gradQuestions">
+                        <p class="text"><u>Questions:</u></p>
+                        <div>
+                            <p class="text">How does the point system work?</p>
+                            <p class="textLight ans"><span>Ans:</span> <span> The point system works by deduction. You will start with 500 points at the beginning. Deduction will happen based on your performance. This process is irreversible. </span></p>
+                        </div>
+                        <div>
+                            <p class="text">When does my points get deducted?</p>
+                            <p class="textLight ans">
+                                    <span>Ans:</span> 
+                                    <span> These will cause point deduction. <br>
+                                        1. Absence in class. <br>
+                                        2. Being late. <br>
+                                        3. Unresponsiveness in class.<br>
+                                        4. Missing daily task.<br>
+                                        5. Copying daily task.<br>
+                                        6. Missing final project.<br>
+                                    </span>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text">Will this affect my ranking?</p>
+                            <p class="textLight ans"><span>Ans:</span> <span> Yes, It will.</span></p>
+                        </div>
+                        <div>
+                            <p class="text">Will this grade be present in my certificate?</p>
+                            <p class="textLight ans"><span>Ans:</span> <span> No, grades won't be present.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment rightSections" id="payment">
+                    <table width="100%">
+                        <tr>
+                            <th>Course Fee</th>
+                            <th>Discount</th>
+                            <th>Paid amount</th>
+                            <th>Due amount</th>
+                        </tr>
+                        <tr>
+                            <td align="center">1000</td>
+                            <td align="center">100</td>
+                            <td align="center">300</td>
+                            <td align="center">600</td>
+                        </tr>
+                    </table>
+
+                    <form class="paymentForm" action="">
+
+                            <label class="label" for="due">Pay Due</label>
+                            <input class="input" name="due" type="text" placeholder="Transaction ID" required>
+                            <input class="formBtn" name="due" type="submit" value="Confirm Payment.">
+
+                    </form>
+                </div>
+
+                <div class="notification rightSections" id="notification">
+                    <p class="text noticeHeader">Notice:</p>
+                    <p class="textLight notice">This is a Notice. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates eos maxime, nisi sunt nostrum tempore expedita ipsam ratione minima. Doloribus?</p>
+                    <p class="text noticeHeader">Notifications:</p>
+                    <p class="textLight notice">This is a Notification. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla deleniti, eius ut facere praesentium atque. 
+                        <form action="">
+                            <input type="hidden" value="clrNotification">
+                            <label class="labelType2 text">Click</label>
+                            <button type="submit" class="cancelBtnLight"><i class="fas fa-times"></i></button>
+                            <label class="labelType2 text">to delete notifications.</label>
+                        </form>
+                    </p>
+                </div>
+
+                <div class="messaging rightSections" id="messaging">
+                    <p class="underdevelopment">
+                        <i class="fas fa-cog bigCog"></i>
+                        <i class="fas fa-cog smallCogUp"></i>
+                        <i class="fas fa-cog smallCogDown"></i>
+                    </p>
+                </div>
+
+                <div class="security rightSections" id="security">
+                    <p class="underdevelopment">
+                        <i class="fas fa-cog bigCog"></i>
+                        <i class="fas fa-cog smallCogUp"></i>
+                        <i class="fas fa-cog smallCogDown"></i>
+                    </p>
+                </div>
+
+
 
             </div>
 
@@ -244,108 +364,6 @@
 
 
 
-
-
-
-    <script type="text/javascript">
-
-        $('input[type="radio"]').click(function () {
-            var inputValue = $(this).attr("value");
-            if (inputValue == "Baiust") {
-                $("#baiust").show();
-                $("#refer").hide();
-                $("#none").hide();
-            } else if (inputValue == "Referred") {
-                $("#baiust").hide();
-                $("#refer").show();
-                $("#none").hide();
-            } else if (inputValue == "None")  {
-                $("#baiust").hide();
-                $("#refer").hide();
-                $("#none").show();
-            }
-        });
-
-        function showPortion1() {
-            document.getElementById("portion1").style.display = 'block';
-            document.getElementById("portion2").style.display = 'none';
-
-            document.getElementById("signUp").style.display = 'none';
-            document.getElementById("content").style.display = 'grid';
-            document.getElementById("courseBtns").style.display = 'block';
-        }
-
-        function showPortion2() {
-            document.getElementById("portion2").style.display = 'block';
-            document.getElementById("portion1").style.display = 'none';
-
-            document.getElementById("signUp").style.display = 'grid';
-            document.getElementById("content").style.display = 'none';
-            document.getElementById("courseBtns").style.display = 'none';
-        }
-
-        function allBtnClicked() {
-            document.getElementById("allBtn").style.color = '#FF165D';
-            document.getElementById("webBtn").style.color = '#000';
-            document.getElementById("appBtn").style.color = '#000';
-
-            document.getElementById("web1").style.display = 'grid';
-            document.getElementById("web2").style.display = 'grid';
-            document.getElementById("web3").style.display = 'grid';
-            document.getElementById("app").style.display = 'grid';
-            
-        }
-
-        function webBtnClicked() {
-            document.getElementById("webBtn").style.color = '#FF165D';
-            document.getElementById("allBtn").style.color = '#000';
-            document.getElementById("appBtn").style.color = '#000';
-
-            document.getElementById("web1").style.display = 'grid';
-            document.getElementById("web2").style.display = 'grid';
-            document.getElementById("web3").style.display = 'grid';
-            document.getElementById("app").style.display = 'none';
-            
-        }
-
-        function appBtnClicked() {
-            document.getElementById("appBtn").style.color = '#FF165D';
-            document.getElementById("allBtn").style.color = '#000';
-            document.getElementById("webBtn").style.color = '#000';
-
-            document.getElementById("web1").style.display = 'none';
-            document.getElementById("web2").style.display = 'none';
-            document.getElementById("web3").style.display = 'none';
-            document.getElementById("app").style.display = 'grid';
-            
-        }
-
-    </script>
-
 </body>
 </html>
 
-
-<!--<div class="gridCol_2_size_7_3 gridGap_2 w_75Per m_a">
-
-    <span></span>
-
-    preview start
-
-    <div class="posFix top_0 right_110 w_25Per h_100Per">
-
-        <h2 class="titleR mt_112px">         
-            Details
-        </h2>
-
-        <div class="ofScrollY h_100Per pr_10px pl_10px scrlNone" id="detailsList">
-
-            This slot holds, js generated details of previews for all colors
-
-        </div>
-
-    </div>
-
-    preview end
-
-</div>-->

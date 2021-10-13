@@ -28,6 +28,9 @@
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/aafecdc4bf.js" crossorigin="anonymous"></script>
 
+    <!--Script-->
+    <script src="../../Script/toggleOnClick.js"></script>
+
     <title>Document</title>
 
 </head>
@@ -347,18 +350,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <script type="text/javascript">
 
         $('input[type="radio"]').click(function () {
@@ -378,61 +369,16 @@
             }
         });
 
-        function showPortion1() {
-            document.getElementById("portion1").style.display = 'block';
-            document.getElementById("portion2").style.display = 'none';
-
-            document.getElementById("signUp").style.display = 'none';
-            document.getElementById("content").style.display = 'grid';
-            document.getElementById("courseBtns").style.display = 'block';
-        }
-
-        function showPortion2() {
-            document.getElementById("portion2").style.display = 'block';
-            document.getElementById("portion1").style.display = 'none';
-
-            document.getElementById("signUp").style.display = 'grid';
-            document.getElementById("content").style.display = 'none';
-            document.getElementById("courseBtns").style.display = 'none';
-        }
-
-        function allBtnClicked() {
-            document.getElementById("allBtn").style.color = '#FF165D';
-            document.getElementById("webBtn").style.color = '#000';
-            document.getElementById("appBtn").style.color = '#000';
-
-            document.getElementById("web1").style.display = 'grid';
-            document.getElementById("web2").style.display = 'grid';
-            document.getElementById("web3").style.display = 'grid';
-            document.getElementById("app").style.display = 'grid';
-            
-        }
-
-        function webBtnClicked() {
-            document.getElementById("webBtn").style.color = '#FF165D';
-            document.getElementById("allBtn").style.color = '#000';
-            document.getElementById("appBtn").style.color = '#000';
-
-            document.getElementById("web1").style.display = 'grid';
-            document.getElementById("web2").style.display = 'grid';
-            document.getElementById("web3").style.display = 'grid';
-            document.getElementById("app").style.display = 'none';
-            
-        }
-
-        function appBtnClicked() {
-            document.getElementById("appBtn").style.color = '#FF165D';
-            document.getElementById("allBtn").style.color = '#000';
-            document.getElementById("webBtn").style.color = '#000';
-
-            document.getElementById("web1").style.display = 'none';
-            document.getElementById("web2").style.display = 'none';
-            document.getElementById("web3").style.display = 'none';
-            document.getElementById("app").style.display = 'grid';
-            
-        }
-
     </script>
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
