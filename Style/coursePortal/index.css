@@ -45,17 +45,21 @@ body{
 }
 
 .linkBtn{
+    display:grid;
     background-color: transparent;
     border:none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    padding:0 .5rem;
+
+    align-content: center;
     cursor:pointer;
+    text-decoration: none;
+    color:#FF165D;
     transition: 200ms ease-in-out;
 }
 
 .linkBtn:hover{
-    color:#FF165D;
+    color:#e91655;
     transition: 200ms ease-in-out;
 }
 

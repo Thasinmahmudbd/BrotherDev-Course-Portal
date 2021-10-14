@@ -68,12 +68,8 @@
             <div class="nav">
                 <p><span class="bd">BD</span> <span class="courses">Courses</span></p>
 
-                <div class="links" id="courseBtns">
-                    <button class="linkBtn" id="allBtn" onclick="allBtnClicked()">All</button>
-                    <button class="linkBtn" id="appBtn" onclick="appBtnClicked()">App</button>
-                    <button class="linkBtn" id="webBtn" onclick="webBtnClicked()">Web</button>
-                    <button class="linkBtn" id="pdfBtn" onclick="pdfBtnClicked()">Pdf</button>
-                    <button class="linkBtn" id="vidBtn" onclick="vidBtnClicked()">Videos</button>
+                <div class="links">
+                    <a href="#" class="linkBtn"><i class="fas fa-info-circle"></i></a>
                 </div>
             </div>
 
@@ -86,10 +82,10 @@
                 <a href="myCourses.html" class="panelItem">My Courses</a>
                 <a href="coursePlan.html" class="panelItem active">Course Plan</a>
                 <a href="resources.html" class="panelItem">Resources</a>
-                <a href="#" class="panelItem">Daily Tasks</a>
-                <a href="#" class="panelItem">Final Project</a>
-                <a href="#" class="panelItem">Ranking</a>
-                <a href="#" class="panelItem">Certificate</a>
+                <a href="dailyTask.html" class="panelItem">Daily Tasks</a>
+                <a href="finalProject.html" class="panelItem">Final Project</a>
+                <a href="ranking.html" class="panelItem">Ranking</a>
+                <a href="certificate.html" class="panelItem">Certificate</a>
 
             </div>
 
@@ -230,6 +226,8 @@
 
                     <img src="../../Media/System/Profile_avatar_placeholder_large.png" alt="Upload Photo" class="placeholder_image" onclick="triggerClick()">
                     <input class="input img_uploader" type="file" name="message_photo" onchange="displayImage(this)" id="place_holder">
+
+                    <button type="submit" class="uploadPhoto"><i class="fas fa-check-circle uploadTick"></i></button>
     
                 </form>
 
