@@ -1,0 +1,207 @@
+/* for tablets width = 800px */
+
+@media only screen and (max-width: 800px) {
+
+    .portal{
+        grid-template-columns: 1fr;
+    }
+    
+    /* left side panel */
+    
+    .contentPanel{
+        display:none;
+    }
+    
+    /* right side portal content */
+    
+    /* my course, course plan */
+    
+    .myCourseList{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .advertThumb{
+        grid-template-columns: 180px 1fr 100px;
+    }
+    
+    /* resource */
+    
+    .resourceThumb{
+        grid-template-columns: 100px 1fr;
+    }
+    
+    /* tasks */
+    
+    .taskSection{
+        grid-template-columns: 1fr 100px 100px;
+    }
+    
+    /* certificate */
+    
+    .certificateText{
+        grid-template-columns: 1fr 30px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* grade */
+    
+    .grade{
+        width:calc(100% - 3.5rem);
+    }
+    
+    /* payment */
+    
+    .payment{
+        width:calc(100% - 2rem);
+    }
+    
+    .paymentForm{
+        grid-template-columns: 70px 2fr 1fr;
+    }
+    
+    /* notification */
+    
+    .notification{
+        width:calc(100% - 2rem);
+    }
+    
+    /* messaging */
+    
+    .messaging{
+        width:calc(100% - 2rem);
+    }
+    
+    
+    /* security */
+    
+    .security{
+        width:calc(100% - 2rem);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for tablets width = 500px */
+
+@media only screen and (max-width: 600px) {
+
+
+    /* right side portal content */
+    
+    /* my course, course plan */
+    
+    .myCourseList{
+        display:inline-flex;
+    }
+
+    .thumbImg{
+        display:none;
+    }
+    
+    .advertThumb{
+        grid-template-columns: 1fr 30px;
+    }
+    
+    /* resource */
+    
+    .resourceThumb{
+        grid-template-columns:1fr;
+    }
+
+    .thumbTitle{
+        text-align: center;
+    }
+
+    .resourceThumb .AdvertInfo .text{
+        text-align: center;
+    }
+    
+    /* tasks */
+    
+    .taskSection{
+        grid-template-columns: 1fr;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* grade */
+    
+    .grade{
+        width:calc(100% - 3.5rem);
+    }
+    
+    /* payment */
+    
+    .payment{
+        width:calc(100% - 2rem);
+    }
+    
+    .paymentForm{
+        grid-template-columns: 70px 2fr 1fr;
+    }
+    
+    /* notification */
+    
+    .notification{
+        width:calc(100% - 2rem);
+    }
+    
+    /* messaging */
+    
+    .messaging{
+        width:calc(100% - 2rem);
+    }
+    
+    
+    /* security */
+    
+    .security{
+        width:calc(100% - 2rem);
+    }
+
+}

@@ -32,6 +32,10 @@
     <!--Global-->
     <link rel="stylesheet" href="../../Style/global.css">
 
+    <!--responsive-->
+    <link rel="stylesheet" href="../../Style/responsive/portalHomeRes.css">
+    <link rel="stylesheet" href="../../Style/responsive/indexRes.css">
+
     <!-- script -->
 	<script src="../../Script/triggerClick.js"></script>
     <script src="../../Script/imageViewer.js"></script>
@@ -69,6 +73,9 @@
                 <p><span class="bd">BD</span> <span class="courses">Courses</span></p>
 
                 <div class="links">
+                    <a href="#" class="linkBtn" id="cross" onclick="crossClicked()"><i class="fas fa-times"></i></a>
+                    <a href="#" class="linkBtn" id="ham" onclick="dropDownClicked()"><i class="fas fa-bars"></i></a>
+                    <a href="#" class="linkBtn" id="rightPop" onclick="popBtnClicked()"><i class="fas fa-caret-square-left"></i></a>
                     <a href="#" class="linkBtn"><i class="fas fa-info-circle"></i></a>
                 </div>
             </div>
@@ -86,6 +93,20 @@
                 <a href="finalProject.html" class="panelItem">Final Project</a>
                 <a href="ranking.html" class="panelItem">Ranking</a>
                 <a href="certificate.html" class="panelItem">Certificate</a>
+
+            </div>
+
+            <!--content navigation panel dropdown scrollable-->
+
+            <div class="dropDown" id="drop">
+
+                <a href="myCourses.html" class="dropDownItem">My Courses</a>
+                <a href="coursePlan.html" class="dropDownItem">Course Plan</a>
+                <a href="resources.html" class="dropDownItem">Resources</a>
+                <a href="dailyTask.html" class="dropDownItem">Daily Tasks</a>
+                <a href="finalProject.html" class="dropDownItem">Final Project</a>
+                <a href="ranking.html" class="dropDownItem">Ranking</a>
+                <a href="certificate.html" class="dropDownItem">Certificate</a>
 
             </div>
 
@@ -224,7 +245,7 @@
 
 
 
-    <div class="allRight">
+    <div class="allRight" id="pop">
 
         <!--right side fixed-->
 
@@ -256,6 +277,7 @@
             <div class="otherInfo">
 
                 <div class="rightNav">
+                    <a href="#" class="rightNavBtn" onclick="unPopBtnClicked()" id="rightPop"><i class="rotate fas fa-caret-square-left"></i></a>
                     <button class="rightNavBtn" id="gradeBtn" onclick="showGrade()"><i class="fas fa-graduation-cap"></i></button>
                     <button class="rightNavBtn" id="paymentBtn" onclick="showPayment()"><i class="fas fa-dollar-sign"></i></button>
                     <a href="#" class="rightNavBtn" id="messagingBtn" onclick="showMessaging()"><i class="fas fa-comments"></i></a>

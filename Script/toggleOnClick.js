@@ -76,6 +76,8 @@ function appBtnClicked() {
 
 
 
+
+
 /* Script for right side elements */
 
 function showGrade() {
@@ -147,3 +149,43 @@ function showMessaging() {
     document.getElementById("messagingBtn").style.color = '#FF165D';
     document.getElementById("securityBtn").style.color = '#000';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+
+function popBtnClicked() {
+    document.getElementById("pop").style.right = '0';
+}
+
+function unPopBtnClicked() {
+    document.getElementById("pop").style.right = '-1500px';
+}
+
+function dropDownClicked() {
+    document.getElementById("drop").style.top = '65px';
+    document.getElementById("cross").style.display = 'inline';
+
+    document.getElementById("ham").style.display = 'none';
+}
+
+function crossClicked() {
+    document.getElementById("drop").style.top = '-1000px';
+    document.getElementById("cross").style.display = 'none';
+
+    document.getElementById("ham").style.display = 'inline';
+}
+

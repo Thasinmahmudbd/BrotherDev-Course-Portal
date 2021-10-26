@@ -47,3 +47,7 @@ body{
 .center{
     text-align: center;
 }
+
+.rotate{
+    transform: rotateZ(180deg);
+}

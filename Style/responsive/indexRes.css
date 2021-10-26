@@ -1,0 +1,198 @@
+/* for tablets width = 800px */
+
+@media only screen and (max-width: 800px) {
+
+    body{
+        background-color: #F6F7D7;
+        overflow-x: scroll;
+    }
+    
+    /*left*/
+    
+    .allLeft{
+        grid-template-columns: 1fr;
+    }
+    
+    /*nav*/
+    
+    .nav{
+        grid-template-columns: 150px 1fr;
+        width:100vw;
+    }
+
+    .links{
+        margin-right: 35px;
+    }
+
+    #rightPop{
+        display:inline;
+    }
+    
+    #ham{
+        display:inline;
+    }
+
+    .dropDown{
+        display:grid;
+    }
+    
+    /* content */
+    
+    
+    /* courses */
+    
+    .webCourses{
+        display:grid;
+        grid-gap:1rem;
+    }
+    
+    .course{
+        display:grid;
+        grid-template-columns: 200px 1fr 100px;
+        background-color: #FF165D;
+        width:80%;
+        margin:0 0 0 1rem;
+        border-radius: 25px;
+        transform: translateX(-1000px);
+        -webkit-animation: popUpFromLeft 2s forwards; /* for less modern browsers */
+        animation: popUpFromLeft 2s forwards;
+    }
+    
+    .courseHeader{
+        font-size: 1rem;
+        background-color: #FFF;
+    }
+    
+    .courseImage{
+        border-radius: 25px 0 0 25px;
+    }
+    
+    .courseTxt{
+        background-color: #FFF;
+        padding: .5rem 1rem;
+    }
+    
+    .details{
+        background-color: #FF165D;
+        align-self: center;
+        text-align: center;
+    }
+    
+    .i{
+        display: grid;
+        justify-items: center;
+        color:#fff;
+        font-size: 3rem;
+        text-align: center;
+        transition: 200ms ease-in-out;
+    }
+    
+    .i:hover{
+        transform:rotate(180deg);
+        transition: 200ms ease-in-out;
+    }
+    
+    .course:nth-child(1){
+        animation-delay: 100ms;
+    }
+    
+    .course:nth-child(2){
+        animation-delay: 150ms;
+    }
+    
+    .course:nth-child(3){
+        animation-delay: 200ms;
+    }
+    .course:nth-child(4){
+        animation-delay: 250ms;
+    }
+    
+    /* goodbye */
+    
+    .goodbye{
+        display:grid;
+        grid-template-columns: 1fr 120px;
+        grid-gap:1rem;
+        background-color: #fff;
+        margin: 1rem 2rem 1rem 1rem;
+        border-radius: 25px;
+    }
+    
+    .goodbyeTxt{
+        align-self: center;
+        line-height: 1.5;
+        text-align: right;
+        font-size: .8rem;
+    }
+    
+    .goodbyeGif{
+        border-radius: 0px 25px 25px 0px;
+    }
+    
+    /* sign up form */
+    
+    #signUp{
+        display:none;
+        transform: translateY(1000px);
+        -webkit-animation: popUpFromBottom 1s forwards; /* for less modern browsers */
+        animation: popUpFromBottom 1s forwards;
+    }
+    
+    .threein1{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .twoin1{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .formText{
+        width:80%;
+        margin:auto;
+        border-bottom: 2px solid #000;
+        margin-bottom: 1rem;
+    }
+    
+    .checkbox{
+        display:grid;
+        grid-template-columns: 10px 1fr;
+        justify-items: left;
+    }
+    
+    .none{
+        display:none;
+    }
+    
+    .baiust{
+        display:none;
+    }
+    
+    .refer{
+        display:none;
+    }
+    
+    .info{
+        line-height: 1.5;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+    /*right*/
+    
+    .allRight{
+        width: 100%;
+        right:-1500px;
+        transition: 200ms ease-in-out;
+    }
+
+}

@@ -31,6 +31,9 @@
     <!--Script-->
     <script src="../../Script/toggleOnClick.js"></script>
 
+    <!--responsive-->
+    <link rel="stylesheet" href="../../Style/responsive/indexRes.css">
+
     <title>Document</title>
 
 </head>
@@ -76,11 +79,13 @@
             <div class="nav">
                 <p><span class="bd">BD</span> <span class="courses">Courses</span></p>
 
-                <div class="links" id="courseBtns">
+                <div class="links" id="">
                     <button class="linkBtn" id="allBtn" onclick="allBtnClicked()">All</button>
                     <button class="linkBtn" id="appBtn" onclick="appBtnClicked()">App</button>
                     <button class="linkBtn" id="webBtn" onclick="webBtnClicked()">Web</button>
+                    <a href="#" class="linkBtn" id="rightPop" onclick="popBtnClicked()"><i class="fas fa-caret-square-left"></i></a>
                 </div>
+                    
             </div>
 
             <div class="navHolder">placeholder</div>
@@ -298,13 +303,15 @@
 
 
 
-    <div class="allRight">
+    <div class="allRight" id="pop">
 
         <!--right side fixed-->
 
         <div class="right">
 
             <!--portion one-->
+
+            <a href="#" class="linkBtn" onclick="unPopBtnClicked()" id="rightPop"><i class="rotate fas fa-caret-square-left"></i></a>
 
             <div class="portion1" id="portion1">
 

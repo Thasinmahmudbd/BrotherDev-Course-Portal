@@ -45,16 +45,15 @@ body{
 }
 
 .linkBtn{
-    display:grid;
     background-color: transparent;
     border:none;
     font-size: 1.2rem;
     font-weight: 700;
-
+    margin-right:10px;
     align-content: center;
     cursor:pointer;
     text-decoration: none;
-    color:#FF165D;
+    color:#000;
     transition: 200ms ease-in-out;
 }
 
@@ -65,6 +64,48 @@ body{
 
 #allBtn{
     color:#FF165D;
+}
+
+#ham{
+    display:none;
+}
+
+#cross{
+    display:none;
+}
+
+#rightPop{
+    display:none;
+}
+
+
+/*nav dropdown*/
+
+.dropDown{
+    width:75%;
+    display:none;
+    position:fixed;
+    top:-1000px;
+    background-color: #fff;
+    padding:.5rem;
+    box-shadow: 0px 5px 10px 1px #00000079;
+    transition: 200ms ease-in-out;
+}
+
+.dropDownItem{
+    color:#000;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 500;
+    padding:1rem;
+    text-align: center;
+    transition: 200ms ease-in-out;
+}
+
+.dropDownItem:hover{
+    color: #fff;
+    background-color:#FF165D;
+    transition: 200ms ease-in-out;
 }
 
 /* content */
