@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Form-->
-    <link rel="stylesheet" href="../../Style/form.css">
+    <link rel="stylesheet" href="Style/form.css">
 
     <!--Table-->
-    <link rel="stylesheet" href="../../Style/table.css">
+    <link rel="stylesheet" href="Style/table.css">
 
     <!--Keyframes-->
-    <link rel="stylesheet" href="../../Style/keyframes.css">
+    <link rel="stylesheet" href="Style/keyframes.css">
 
     <!--Basic-->
-    <link rel="stylesheet" href="../../Style/coursePortal/index.css">
-    <link rel="stylesheet" href="../../Style/coursePortal/portalHome.css">
+    <link rel="stylesheet" href="Style/coursePortal/index.css">
+    <link rel="stylesheet" href="Style/coursePortal/portalHome.css">
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,16 +30,16 @@
     <script src="https://kit.fontawesome.com/aafecdc4bf.js" crossorigin="anonymous"></script>
 
     <!--Global-->
-    <link rel="stylesheet" href="../../Style/global.css">
+    <link rel="stylesheet" href="Style/global.css">
 
     <!--responsive-->
-    <link rel="stylesheet" href="../../Style/responsive/portalHomeRes.css">
-    <link rel="stylesheet" href="../../Style/responsive/indexRes.css">
+    <link rel="stylesheet" href="Style/responsive/portalHomeRes.css">
+    <link rel="stylesheet" href="Style/responsive/indexRes.css">
 
     <!-- script -->
-	<script src="../../Script/triggerClick.js"></script>
-    <script src="../../Script/imageViewer.js"></script>
-    <script src="../../Script/toggleOnClick.js"></script>
+	<script src="Script/triggerClick.js"></script>
+    <script src="Script/imageViewer.js"></script>
+    <script src="Script/toggleOnClick.js"></script>
 
     <title>Document</title>
 
@@ -86,9 +86,9 @@
 
             <div class="contentPanel">
 
-                <a href="myCourses.html" class="panelItem">My Courses</a>
+                <a href="myCourses.html" class="panelItem active">My Courses</a>
                 <a href="coursePlan.html" class="panelItem">Course Plan</a>
-                <a href="resources.html" class="panelItem active">Resources</a>
+                <a href="resources.html" class="panelItem">Resources</a>
                 <a href="dailyTask.html" class="panelItem">Daily Tasks</a>
                 <a href="finalProject.html" class="panelItem">Final Project</a>
                 <a href="ranking.html" class="panelItem">Ranking</a>
@@ -137,63 +137,79 @@
                         <div class="info">
                             <p class="sectionTitle">You've registered for :</p>
                             <div class="myCourseList">
-                                <a href="#" class="courseThumb">
-                                    <img class="thumbImg" src="../../Media/course/HtmlCss.png" alt="" width="150px">
+                                <div class="courseThumb">
+                                    <img class="thumbImg" src="Media/course/HtmlCss.png" alt="" width="150px">
                                     <p class="thumbTitle">HTML & CSS <i class="fas fa-check-circle greenLink"></i></p>
-                                </a>
-                                <a href="#" class="courseThumb">
-                                    <img class="thumbImg" src="../../Media/course/phpfull.jpg" alt="" width="150px">
+                                </div>
+                                <div class="courseThumb">
+                                    <img class="thumbImg" src="Media/course/phpfull.jpg" alt="" width="150px">
                                     <p class="thumbTitle">PHP <i class="fas fa-check-circle greenLink"></i></p>
-                                </a>
-                                <a href="#" class="courseThumb">
-                                    <img class="thumbImg" src="../../Media/course/laravel.jpg" alt="" width="150px">
+                                </div>
+                                <div class="courseThumb">
+                                    <img class="thumbImg" src="Media/course/laravel.jpg" alt="" width="150px">
                                     <p class="thumbTitle">Laravel 8 <i class="fas fa-check-circle greenLink"></i></p>
-                                </a>
-                                <a href="#" class="courseThumb">
-                                    <img class="thumbImg" src="../../Media/course/Flutter.webp" alt="" width="150px">
+                                </div>
+                                <div class="courseThumb">
+                                    <img class="thumbImg" src="Media/course/Flutter.webp" alt="" width="150px">
                                     <p class="thumbTitle">Flutter <i class="fas fa-check-circle greenLink"></i></p>
-                                </a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="info">
-                            <div class="advert twoin1">
-                                <div class="advert" id="pdfAll">
-                                    <a href="#" class="resourceThumb">
-                                        <i class="fas fa-file-pdf resourceLogo"></i>
-                                        <div class="AdvertInfo">
-                                            <p class="thumbTitle">Course</p>
-                                            <p class="text">Pdf Name.</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="resourceThumb">
-                                        <i class="fas fa-file-pdf resourceLogo"></i>
-                                        <div class="AdvertInfo">
-                                            <p class="thumbTitle">Course</p>
-                                            <p class="text">Pdf Name.</p>
-                                        </div>
-                                    </a>
+                            <p class="sectionTitle">We are also offering :</p>
+                            <div class="advert">
+
+                                <div class="advertThumb">
+                                    <img class="thumbImg" src="Media/course/HtmlCss.png" alt="" width="150px">
+                                    <div class="AdvertInfo">
+                                        <p class="thumbTitle">HTML & CSS</p>
+                                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In labore dolor deserunt ut. Quidem perspiciatis repudiandae obcaecati sint ullam inventore!</p>
+                                    </div>
+                                    <div class="advertBtn">
+                                        <a href="" class="greenLink text">Join</a>
+                                        <a href="" class="blueLink text">Detail</a>
+                                    </div>
                                 </div>
-                                <div class="advert" id="videoAll">
-                                    <a href="#" class="resourceThumb">
-                                        <i class="fas fa-file-video resourceLogo"></i>
-                                        <div class="AdvertInfo">
-                                            <p class="thumbTitle">Course</p>
-                                            <p class="text">Video Name.</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="resourceThumb">
-                                        <i class="fas fa-file-video resourceLogo"></i>
-                                        <div class="AdvertInfo">
-                                            <p class="thumbTitle">Course</p>
-                                            <p class="text">Video Name.</p>
-                                        </div>
-                                    </a>
+                                <div class="advertThumb">
+                                    <img class="thumbImg" src="Media/course/phpfull.jpg" alt="" width="150px">
+                                    <div class="AdvertInfo">
+                                        <p class="thumbTitle">PHP</p>
+                                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In labore dolor deserunt ut. Quidem perspiciatis repudiandae obcaecati sint ullam inventore!</p>
+                                    </div>
+                                    <div class="advertBtn">
+                                        <a href="" class="greenLink text">Join</a>
+                                        <a href="" class="blueLink text">Detail</a>
+                                    </div>
                                 </div>
+                                <div class="advertThumb">
+                                    <img class="thumbImg" src="Media/course/laravel.jpg" alt="" width="150px">
+                                    <div class="AdvertInfo">
+                                        <p class="thumbTitle">Laravel 8</p>
+                                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In labore dolor deserunt ut. Quidem perspiciatis repudiandae obcaecati sint ullam inventore!</p>
+                                    </div>
+                                    <div class="advertBtn">
+                                        <a href="" class="greenLink text">Join</a>
+                                        <a href="" class="blueLink text">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="advertThumb">
+                                    <img class="thumbImg" src="Media/course/Flutter.webp" alt="" width="150px">
+                                    <div class="AdvertInfo">
+                                        <p class="thumbTitle">Flutter</p>
+                                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In labore dolor deserunt ut. Quidem perspiciatis repudiandae obcaecati sint ullam inventore!</p>
+                                    </div>
+                                    <div class="advertBtn">
+                                        <a href="" class="greenLink text">Join</a>
+                                        <a href="" class="blueLink text">Detail</a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
                     </div>
+
 
 
 
@@ -241,7 +257,7 @@
 
                 <form action="" method="post" class="message_form" enctype="multipart/form-data">
 
-                    <img src="../../Media/System/Profile_avatar_placeholder_large.png" alt="Upload Photo" class="placeholder_image" onclick="triggerClick()">
+                    <img src="Media/System/Profile_avatar_placeholder_large.png" alt="Upload Photo" class="placeholder_image" onclick="triggerClick()">
                     <input class="input img_uploader" type="file" name="message_photo" onchange="displayImage(this)" id="place_holder">
 
                     <button type="submit" class="uploadPhoto"><i class="fas fa-check-circle uploadTick"></i></button>
@@ -372,6 +388,11 @@
         </div>
 
     </div>
+
+
+
+
+
 
 
 

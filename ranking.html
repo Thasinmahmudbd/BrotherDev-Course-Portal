@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Form-->
-    <link rel="stylesheet" href="../../Style/form.css">
+    <link rel="stylesheet" href="Style/form.css">
 
     <!--Table-->
-    <link rel="stylesheet" href="../../Style/table.css">
+    <link rel="stylesheet" href="Style/table.css">
 
     <!--Keyframes-->
-    <link rel="stylesheet" href="../../Style/keyframes.css">
+    <link rel="stylesheet" href="Style/keyframes.css">
 
     <!--Basic-->
-    <link rel="stylesheet" href="../../Style/coursePortal/index.css">
-    <link rel="stylesheet" href="../../Style/coursePortal/portalHome.css">
+    <link rel="stylesheet" href="Style/coursePortal/index.css">
+    <link rel="stylesheet" href="Style/coursePortal/portalHome.css">
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,16 +30,16 @@
     <script src="https://kit.fontawesome.com/aafecdc4bf.js" crossorigin="anonymous"></script>
 
     <!--Global-->
-    <link rel="stylesheet" href="../../Style/global.css">
+    <link rel="stylesheet" href="Style/global.css">
 
     <!--responsive-->
-    <link rel="stylesheet" href="../../Style/responsive/portalHomeRes.css">
-    <link rel="stylesheet" href="../../Style/responsive/indexRes.css">
+    <link rel="stylesheet" href="Style/responsive/portalHomeRes.css">
+    <link rel="stylesheet" href="Style/responsive/indexRes.css">
 
     <!-- script -->
-	<script src="../../Script/triggerClick.js"></script>
-    <script src="../../Script/imageViewer.js"></script>
-    <script src="../../Script/toggleOnClick.js"></script>
+	<script src="Script/triggerClick.js"></script>
+    <script src="Script/imageViewer.js"></script>
+    <script src="Script/toggleOnClick.js"></script>
 
     <title>Document</title>
 
@@ -87,11 +87,11 @@
             <div class="contentPanel">
 
                 <a href="myCourses.html" class="panelItem">My Courses</a>
-                <a href="coursePlan.html" class="panelItem active">Course Plan</a>
+                <a href="coursePlan.html" class="panelItem">Course Plan</a>
                 <a href="resources.html" class="panelItem">Resources</a>
                 <a href="dailyTask.html" class="panelItem">Daily Tasks</a>
                 <a href="finalProject.html" class="panelItem">Final Project</a>
-                <a href="ranking.html" class="panelItem">Ranking</a>
+                <a href="ranking.html" class="panelItem active">Ranking</a>
                 <a href="certificate.html" class="panelItem">Certificate</a>
 
             </div>
@@ -129,70 +129,67 @@
 
 
 
-                    <!--Course plan section-->
 
-                    <div class="myCourses" id="coursePlan">
+                    <!--My courses section-->
+
+                    <div class="myCourses" id="myCourses">
 
                         <div class="info">
-                            <p class="sectionTitle">Click on the Course to open course plan.</p>
+                            <p class="sectionTitle">You've registered for :</p>
                             <div class="myCourseList">
                                 <a href="#" class="courseThumb">
-                                    <img class="thumbImg" src="../../Media/course/HtmlCss.png" alt="" width="150px">
+                                    <img class="thumbImg" src="Media/course/HtmlCss.png" alt="" width="150px">
                                     <p class="thumbTitle">HTML & CSS <i class="fas fa-check-circle greenLink"></i></p>
                                 </a>
                                 <a href="#" class="courseThumb">
-                                    <img class="thumbImg" src="../../Media/course/phpfull.jpg" alt="" width="150px">
+                                    <img class="thumbImg" src="Media/course/phpfull.jpg" alt="" width="150px">
                                     <p class="thumbTitle">PHP <i class="fas fa-check-circle greenLink"></i></p>
                                 </a>
                                 <a href="#" class="courseThumb">
-                                    <img class="thumbImg" src="../../Media/course/laravel.jpg" alt="" width="150px">
+                                    <img class="thumbImg" src="Media/course/laravel.jpg" alt="" width="150px">
                                     <p class="thumbTitle">Laravel 8 <i class="fas fa-check-circle greenLink"></i></p>
                                 </a>
                                 <a href="#" class="courseThumb">
-                                    <img class="thumbImg" src="../../Media/course/Flutter.webp" alt="" width="150px">
+                                    <img class="thumbImg" src="Media/course/Flutter.webp" alt="" width="150px">
                                     <p class="thumbTitle">Flutter <i class="fas fa-check-circle greenLink"></i></p>
                                 </a>
                             </div>
                         </div>
 
                         <div class="info">
+
+                            <p class="text">You are currently doing _$_ course.</p>
+
                             <table>
                                 <tr>
-                                    <th width="10%">Class</th>
-                                    <th width="90%">Topics</th>
+                                    <th width="10%">Rank</th>
+                                    <th width="40%">ID</th>
+                                    <th width="40%">Name</th>
+                                    <th width="10%">Points</th>
                                 </tr>
                                 <tr>
-                                    <td width="10%">01</td>
-                                    <td width="90%">
-                                        <ol>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                        </ol>
-                                    </td>
+                                    <td width="10%" class="center">01</td>
+                                    <td width="40%" class="center">1107025</td>
+                                    <td width="40%" class="center">Thasin Mahmud</td>
+                                    <td width="10%" class="center">400</td>
                                 </tr>
                                 <tr>
-                                    <td>01</td>
-                                    <td>
-                                        <ol>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                        </ol>
-                                    </td>
+                                    <td width="10%" class="center">01</td>
+                                    <td width="40%" class="center">1107025</td>
+                                    <td width="40%" class="center">Thasin Mahmud</td>
+                                    <td width="10%" class="center">400</td>
                                 </tr>
                                 <tr>
-                                    <td>01</td>
-                                    <td>
-                                        <ol>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rerum.</li>
-                                        </ol>
-                                    </td>
+                                    <td width="10%" class="center">01</td>
+                                    <td width="40%" class="center">1107025</td>
+                                    <td width="40%" class="center">Thasin Mahmud</td>
+                                    <td width="10%" class="center">400</td>
+                                </tr>
+                                <tr>
+                                    <td width="10%" class="center">01</td>
+                                    <td width="40%" class="center">1107025</td>
+                                    <td width="40%" class="center">Thasin Mahmud</td>
+                                    <td width="10%" class="center">400</td>
                                 </tr>
                             </table>
                         </div>
@@ -245,7 +242,7 @@
 
                 <form action="" method="post" class="message_form" enctype="multipart/form-data">
 
-                    <img src="../../Media/System/Profile_avatar_placeholder_large.png" alt="Upload Photo" class="placeholder_image" onclick="triggerClick()">
+                    <img src="Media/System/Profile_avatar_placeholder_large.png" alt="Upload Photo" class="placeholder_image" onclick="triggerClick()">
                     <input class="input img_uploader" type="file" name="message_photo" onchange="displayImage(this)" id="place_holder">
 
                     <button type="submit" class="uploadPhoto"><i class="fas fa-check-circle uploadTick"></i></button>
@@ -387,5 +384,7 @@
 
 
 
+
 </body>
 </html>
+
